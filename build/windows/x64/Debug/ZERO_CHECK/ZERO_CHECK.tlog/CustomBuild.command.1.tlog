@@ -1,0 +1,10 @@
+^C:\USERS\ALFONSO\DOCUMENTS\FLUTTER-PROYECTS\POKEDEX\BUILD\WINDOWS\CMAKEFILES\2BAD09D5DAC6835927AD0F8CAC795C41\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Alfonso/Documents/flutter-proyects/Pokedex/windows -BC:/Users/Alfonso/Documents/flutter-proyects/Pokedex/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Alfonso/Documents/flutter-proyects/Pokedex/build/windows/pokedex.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
